@@ -31,8 +31,12 @@ backend:
   listen:
     port: 7007
   database:
-    client: better-sqlite3
-    connection: ':memory:'
+   client: pg
+   connection:
+     host: "localhost"
+     port: 5432
+     user: "laura"
+     password: "laura"
   cache:
     store: memory
   cors:
